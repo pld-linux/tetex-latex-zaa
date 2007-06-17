@@ -2,7 +2,10 @@
 # - check license
 %define short_name zaa
 %define	texhash	[ ! -x %{_bindir}/texhash ] || %{_bindir}/texhash 1>&2 ;
-Summary:	Formats for Zeitschrift für Analysis und ihre Anwendungn
+Summary:	Formats for Zeitschrift fuer Analysis und ihre Anwendungn
+Summary(de.UTF-8):	Formats für Zeitschrift für Analysis und ihre Anwendungn
+Summary(en.UTF-8):	Formats for Zeitschrift für Analysis und ihre Anwendungn
+Summary(pl.UTF-8):	Formaty do czasopisma "Zeitschrift für Analysis und ihre Anwendungn"
 Name:		tetex-latex-%{short_name}
 Version:	1.8
 Release:	1
@@ -23,6 +26,15 @@ cultivating and extending its applications. To this end, it publishes
 research articles on differential equations, functional analysis and
 operator theory, notably with applications to mechanics, physics,
 engineering and other disciplines of the exact sciences.
+
+%description -l pl.UTF-8
+"Zeitschrift für Analysis und ihre Anwendungn" (Czasopismo analizy i
+jej zastosowań) specjalizuje się w rozpowszechnianiu wiedzy
+teoretycznej z zakresu analizy i jednocześnie kultywowaniu i
+rozszerzaniu jej zastosowań. W związku z tym publikuje artykuły
+badawcze z zakresu równań różniczkowych, analizy funkcyjnej i teorii
+operatorów, w szczególności z zastosowaniami w mechanice, fizyce,
+inżynierii i innych dziedzinach nauk ścisłych.
 
 %prep
 %setup -q -c
